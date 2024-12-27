@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/formStyle.css">
+    <title>My test page</title>
+  </head>
+  
+  <body>
+    <div class="main_section">
+
+      <div class="images">
+        <img src="form_pic.jpg" alt="leafs" class="background" height="700px" width="600px">
+         <div class="overlay" >
+             <h1 class="logo"> ODIN</h1>
+             <img src="/odin-lined.png" alt="odin" class="overlay_img">
+         </div>
+      </div>
+      <div class="form">
+        <form action="/my-handling-form" method="post">
+          <h2>This is not a real online service! You know you need something like  like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <section class="names">
+              <div>
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" name="firstName" required>
+              </div>
+              <div>
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="latstName" required>
+              </div>
+            </section>
+            <section>
+              <div>
+                <label for="userEmail">EMAIL</label>
+                <input type="email" name="mail" id="userEmail" required>
+              </div>
+              <div>
+                <label for="userPhone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="userPhone"  required>
+              </div>
+            </section>
+            <section>
+              <div>
+                <label for="userPassword">PASSWORD</label>
+                <input type="password" name="password" id="userPassword" required>
+              </div>
+               <div>
+                 <label for="reuserPassword">CONFIRM PASSWORD</label>
+                 <input type="password" name="repassword" id="reuserPassword" required>
+               </div>
+            </section>
+          </fieldset>
+          <button type="submit">Create Account</button>
+          <p class="log_in">Already have an account? <a href="http://www.google.com">Log in</a></p>
+        </form>
+       
+      </div>
+    </div>
+    <script>
+      const inputs = document.querySelectorAll('input');
+    
+      inputs.forEach(input => {
+        input.addEventListener('blur', () => {
+          if (!input.validity.valid) {
+            input.classList.add('invalid');
+          } else {
+            input.classList.remove('invalid'); // Remove class if valid
+          }
+        });
+    
+        input.addEventListener('focus', () => {
+            input.classList.remove('invalid');
+        })
+      });
+    </script>
+  </body>
+</html>

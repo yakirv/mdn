@@ -1,0 +1,146 @@
+
+.main_section
+{
+  display:flex;
+  flex-direction: row;
+  margin-right: 2em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  top: 50%;
+  width: 600px;
+}
+form{
+ background-color: #f8fafc;
+ height: 700px;
+ width: 600px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+}
+.images
+{
+  position: relative;
+  display: inline-block;
+}
+.background
+{
+  display: block;
+  height: "700px";
+  width: "600px";
+
+}
+.logo
+{
+  position: absolute;
+  color: white;
+  font-size: 80px;
+  transform: translate(-50%, -50%); 
+  left: 60%;
+  
+  
+}
+.overlay_img
+{
+  
+  width: 100px; 
+  height: 100px; 
+  padding-left: 30px;
+  
+  
+}
+.overlay{
+  position: absolute;
+  background: rgb(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  display: inline-block;
+}
+input.invalid {
+  border: 1px solid red;
+  
+}
+input:focus{
+  border: blue;
+  box-shadow: 0px 8px 6px -6px rgba(0,0,0,0.3);
+}
+input{
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 150px;
+}
+
+fieldset{
+ 
+  border-style: none;
+  background-color: white;
+  box-shadow: 0px 8px 6px -6px rgba(0,0,0,0.3);
+  margin-top: -50px;
+  margin-right: -1px;
+  margin-left: -0.5px; 
+  
+}
+section
+{
+  display: flex;
+  flex-direction: row;
+}
+label
+{
+  font-size: 15px;
+  color: grey;
+  font-weight: 700;
+}
+section div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-bottom: 1em;
+ 
+}
+h2{
+    margin-left: 25px;
+    width: 90%;
+    overflow-wrap: break-word;
+
+}
+
+legend{
+  padding-top: 3em;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  margin-left: 0.75em;
+}
+button{
+  background-color: #5a6d47;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1.2em;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  width: 180px;
+ 
+}
+.log_in
+{
+  margin-top: -100px;
+  margin-left: 20px;
+}
+a{
+  color: #5a6d47;
+  text-decoration: none;
+  font-weight: 800;
+}
+label{
+  font-size: 10px;
+}
